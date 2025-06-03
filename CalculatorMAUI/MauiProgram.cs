@@ -13,12 +13,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
-        // Register the MainViewModel and MainPage for dependency injection
 
-        // Add the MainViewModel to the service collection
         builder.Services.AddSingleton<MainViewModel>();
-
-        // Add the MainPage to the service collection
         builder.Services.AddSingleton<MainPage>();
 
 		return builder.Build();
